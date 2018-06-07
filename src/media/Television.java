@@ -29,4 +29,37 @@ public class Television {
     public void setTurnOn(boolean turnOn) {
         this.turnOn = turnOn;
     }
+
+    public Television() {
+        this.volume = 0;
+        this.currentProgram = 1;
+        this.turnOn = true;
+
+    }
+
+    public Television(int volume, int currentProgram, boolean turnOn) {
+        this.volume = volume;
+        this.currentProgram = currentProgram;
+        this.turnOn = turnOn;
+
+    }
+
+    public void printMainAttributes() {
+
+        System.out.println("Trenutna jacina je:" +getVolume());
+        System.out.println("Trrenutna stanica je:" +getCurrentProgram());
+        System.out.println("Radio je ukljucen:");
+
+    }
+    
+    
+    public void showData () {
+        System.out.println("Trenutna jacina je:" +getVolume());
+        System.out.println("Trrenutna program je:" +getCurrentProgram());
+        System.out.println("Radio je ukljucen:");
+
+        
+        
+        
+    }
 }

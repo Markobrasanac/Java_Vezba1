@@ -12,7 +12,7 @@ package media;
 public class Radio {
 
     private double fmFrequency;
-    private int mFrequency;
+    private int amFrequency;
     private char band;
 
     public double getFmFrequency() {
@@ -23,12 +23,12 @@ public class Radio {
         this.fmFrequency = fmFrequency;
     }
 
-    public int getmFrequency() {
-        return mFrequency;
+    public int getAmFrequency() {
+        return amFrequency;
     }
 
-    public void setmFrequency(int mFrequency) {
-        this.mFrequency = mFrequency;
+    public void setAmFrequency(int amFrequency) {
+        this.amFrequency = amFrequency;
     }
 
     public char getBand() {
@@ -37,6 +37,37 @@ public class Radio {
 
     public void setBand(char band) {
         this.band = band;
+    }
+
+    public Radio() {
+        this.fmFrequency = 91.8;
+        this.amFrequency = 600;
+        this.band = 'A';
+    }
+    
+    
+    public Radio(double fmFrequency,int amFrequency, char band) {
+        
+        this.fmFrequency = fmFrequency;
+        this.amFrequency  = amFrequency;
+        this.band = band;
+        
+    }
+
+    public void printMainAttributes() {
+
+        System.out.println("Fm frekvencija je:" + getFmFrequency());
+        System.out.println("Am frekvencija je:" + getAmFrequency());;
+        System.out.println("Band je:" + getBand());
+
+    }
+    
+    public void showData() {
+        System.out.println("Fm frekvencija je:" + getFmFrequency());
+        System.out.println("Am frekvencija je:" + getAmFrequency());;
+        System.out.println("Band je:" + getBand());
+        
+        
     }
 
 }
